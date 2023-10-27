@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Microsoft clone</title>
+    
+    <link rel="icon" type="image/x-icon" href="/assets/mic favicon-8bce8e49.png" />
+    <link rel="stylesheet" href="/assets/index-5217907a.css">
+  </head>
+  <body>
+    <div class="navbar flex justify-between items-center p-4">
+      <div class="flex justify-center items-center md:order-2">
+        <div class="hamburger inline-block cursor-pointer p-1 md:hidden">
+          <div class="line h-0.5 w-6 my-1 bg-black"></div>
+          <div class="line h-0.5 w-6 my-1 bg-black"></div>
+          <div class="line h-0.5 w-6 my-1 bg-black"></div>
+        </div>
+        <div class="search mx-4 md:hidden">
+          <a href=""
+            ><img
+              class="w-6 cursor-pointer"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAABd0lEQVR4nO2WX0oCYRTFfyj6kvVqtIRsD9UGsiKsHURmZS0iwmX0x9aTRZYptIBeIh/yRePCGfgQyub7ppHAAxdmmO+ce+feO4eBGf4x8kAFaAJPQF9h1zd6Zmf+BNtADxhNiC6wlWTiDNBwEtwBx8AyMKcoASdAyzl3IW4wGhL8BPYniNqzA52Nighu+0iCqzF4a04Rm77J887M7c3joiruC5DzKaDizNxnllngXho7PgXcinyEP+rSuPYhP4ts2+6LkjTMJ2LjQ+RCQAHz0jCt2OgnUMCCNN59yL0ERrASMoKmyOZwvjiTxqUPeU/kVsBn+BDyGeaAVwmYvcZFTdyOrxEZyo4Vm73+FuvAABgCGwRgEXhziqiqtd8hqzcfiHMemrwtoaiIkey1LpMpKGzbT52ZD5U8k0Tytu7Lzk78FJ0k2t4eSx7BlmlXv19dmZW53CNwpW33XjhD0WmjmccSKaI4S84U2u461vjCpYrDaSafgbTxBe0YhpQ50/JEAAAAAElFTkSuQmCC"
+              alt="search icon"
+          /></a>
+        </div>
+      </div>
+      <div class="logo flex text-center md:order-1 mx-4 lg:mx-10">
+        <img
+          class="w-28 hover:cursor-pointer md:w-36"
+          src="/assets/microsoft-logo-png-2396-4bad04d3.png"
+          alt=""
+        />
+        <div
+          class="services absolute md:static items-center w-fit inset-0 bg-gray-300 md:w-auto md:bg-white md:flex mx-4 space-x-5 -translate-x-96 md:translate-x-0"
+        >
+          <div
+            class="items hover:cursor-pointer hover:underline hover:underline-offset-4"
+          >
+            Microsoft 365
+          </div>
+          <div
+            class="items hover:cursor-pointer hover:underline hover:underline-offset-4"
+          >
+            Teams
+          </div>
+          <div
+            class="items hover:cursor-pointer hover:underline hover:underline-offset-4"
+          >
+            Windows
+          </div>
+          <div
+            class="items hover:cursor-pointer hover:underline hover:underline-offset-4"
+          >
+            Surface
+          </div>
+          <div
+            class="items hover:cursor-pointer hover:underline hover:underline-offset-4"
+          >
+            Xbox
+          </div>
+          <div
+            class="items hover:cursor-pointer hover:underline hover:underline-offset-4"
+          >
+            Support
+          </div>
+        </div>
+      </div>
+      <div class="cart text-center md:order-3 flex space-x-3">
+        <span
+          class="text-sm flex items-center hover:cursor-pointer hover:underline"
+          >All Microsft</span
+        >
+        <div class="search hidden md:block mx-4">
+          <a href=""
+            ><img class="w-6" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAABd0lEQVR4nO2WX0oCYRTFfyj6kvVqtIRsD9UGsiKsHURmZS0iwmX0x9aTRZYptIBeIh/yRePCGfgQyub7ppHAAxdmmO+ce+feO4eBGf4x8kAFaAJPQF9h1zd6Zmf+BNtADxhNiC6wlWTiDNBwEtwBx8AyMKcoASdAyzl3IW4wGhL8BPYniNqzA52Nighu+0iCqzF4a04Rm77J887M7c3joiruC5DzKaDizNxnllngXho7PgXcinyEP+rSuPYhP4ts2+6LkjTMJ2LjQ+RCQAHz0jCt2OgnUMCCNN59yL0ERrASMoKmyOZwvjiTxqUPeU/kVsBn+BDyGeaAVwmYvcZFTdyOrxEZyo4Vm73+FuvAABgCGwRgEXhziqiqtd8hqzcfiHMemrwtoaiIkey1LpMpKGzbT52ZD5U8k0Tytu7Lzk78FJ0k2t4eSx7BlmlXv19dmZW53CNwpW33XjhD0WmjmccSKaI4S84U2u461vjCpYrDaSafgbTxBe0YhpQ50/JEAAAAAElFTkSuQmCC" alt="search icon"
+          /></a>
+        </div>
+        <a href=""
+          ><img
+            class="w-6"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACUElEQVR4nO2ZPWtUQRSGn9WAEsS0foUQNRo/QCTY5A8YCaKVnaCSqBERCQh2VoKNjQgWFhqMJhJEghEri5hSrGwUAgG/BRcNgkXErBx4L1wk7JJ1ztw7kAem2b3znvMus3PPmYEVykc/8AGo1RnfgRfACaBCSfnYwMS/Y7SsZt7nkny3xPeW9CZgEPip545TQg7JjJnoa/DsaRl5ReKsAb7JzC4SZ1RGhkicQRkZJ3F2yMjXsu5ezWzZ3STOAxk5S+KckZExEqdbRj6v/E9KxPgyazSPMRPCyFAJjMyGMLI79z+JzV3FvhJCzF6GXyS4k3isUxW+CGwNJTohI1YVx+KUYj4PKXpeoveJx4xHT7RXop+IQ5eW1DzQGlK4ouKxpiDeXFWs2x7ijyQ+gC+r1MVarF6PABckfg9fDirOW6+yaJ8CWN8fo5K47BWgkuvjtznFaAN+AX+Adhx5LCO2x3twTvrPcOaiAo046b+U/jGc2V/ngO9/2SPtKrCWCFtjVQE7A2tfl+5NIjGpgHbQHYoWVdem20MkhhXwTkDNI9J8TUR6FHTOYTccJiKrdY8Sugv8DWwgMk8Cm1gEblAAl5TALRLngIy8IXFa1PTUdMuVNJMycpLEGZCRaRJnfa5cuQZ0aGtOkqPAQsBteLpIM4cDGlkANhZlZERJ2Etys8ZUg3uVsTpz7BK2ELKq1ZLJaM/1FktRrTPnBwWRvU+2LCOp+SbmuJOdd00pMRtP9dlEwDlRrrGz05X8sOWzPeAcYmBr/aGWjA37VRsl1Mwc/gIXmFSH9pqNAQAAAABJRU5ErkJggg=="
+            alt="search icon" /></a
+        ><a href=""
+          ><img class="w-6 mx-2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAENUlEQVR4nO1bQWgcVRh+0SoFIx7EtvTgqeJBFDSKF3tsG4VehBVrCykeFlxI3Pd987J7EOYkFNqkDV5U8GCbNgbx5rW3hkBTo1IRweQgsVoRPFh7aGts+c0beZnO7M5mdzb7xvngh92ZN/++/3//+9/3/jerVIkSJUqUKFGiRIkS/cIQyREAR0lqEflsjHlB7qmiIgiCPSTPALhG8m6SyD0ApycmJnarAmEIwCSAv9IMT5AbAALvIyIMw50A5hJG+ld7fQrAtHyWawmOuCA6lMcjPxcz6EoQBAfDMHwg3liuAThEcjnuBC8jAcBkbNSnK5XKg+2eC8Nwh+SKmBOofALJXQD+dAyY6lQHgBk3J0gSVb6Am0fwSpaRT4mEZTeClEdz/1rUcZnzW1WktR51HPmzF7mgXq+/6HT6l6SElxXyLMnrkT5LlgYbQRC85YTtXLf6AMw7Dn1TDToABE6HT/ZA3ymvVgNuIIqAUz3QN+Xogxp0ADjyv54CJEdcytttEgTwm6PveeXbMqi1Ht2qIq31a47xa14sgwLZ0jphuyykRm2NCH3TDZscJCp8plMdAD5wqbB3NQJsXg4lhGeyRIK0iRkvopWnpa8LMUOWJSekbYftnHfDXmTWm7kfhxQzEpxw19Lbz2wxRGTezfZO1Jz3uSDiRoLgRtaSmM0f2tuRT4IkMRlt2dW1MHzNMr9dqsAYEkJjGWNUFj9iSU5xRrxEiRL3IQzDh0m+RPINklWSDREA79qc8LIx5lFVJGitnyX5PsklALcyLIN/A/hWagnGmP1eJsZqtfoQgLdJftfBcViafKh8gtb6GMnVFGP+AfADgC9IfgTghBVhg58LDQZwJ/bM98oHGGP2AvgywWhhgLMkDzcajcfa6SH5CMlXSX5CcpHk62rQAeAAgD9ihv8uCa5Wqw2rIoPkGMnbDp1dl4JI3oYbY54i+R7JBftewS1biVqQ63Jf5Q0A78i8doz/yWbu3NBsNh8H8HFCrojvK+5IO2mfS0dIHpYly/nBryUPqBxRr9efaZFg02RVnutpR4IgeC72xsdi3gSm0Wg86R6TdSjX5fmerfHc/BLDj+Pj40+oHCGny3LK3CWfWOqmRP8fbOKJwv6mMeZplTMAHG9jnJHlM/5SRkJeON5VR8KNg4qb/S5WArjayjDZYzh7jVYOuNqLznxllV3sSUhlW+5ahrfbvl1brfW+rjpUq9WGAbzSr2Kle9YY4xpnIyodax/Ra7m/nuCEwT9fTDttduRTlQHihATnDf4JczsHiGEqA0ie894BSJkC1rh/Cypu++ia3C/EFNBa7+tlEuzLHqHQy+B2IAMRalgi1GzTbkz5iMoGFV5qF95tRv9yP3hL3hWn1P8a9G0ztJ2QbS2AlQ5HfqXn2+HtRCcFESm85lYQ2W5EJTEAl9ySmHzvW0lMFQD3AF0T5ivAUlAXAAAAAElFTkSuQmCC" alt="search icon"
+        /></a>
+      </div>
+    </div>
+
+    <div
+      class="crousal flex flex-col-reverse md:flex-row md: bg-white md:bg-[#c3dffa] lg:px-8 lg:py-16"
+    >
+      <div
+        class="left felx flex-col justify-center items-center md:items-baseline md:py-6 lg:my-16"
+      >
+        <h1 class="text-2xl font-semibold mx-6 py-4 lg:mx-24">Microsoft 365</h1>
+        <p class="mx-6 md:text-left py-2 w-1/2 lg:mx-24">
+          Turn your ideas into reality, stay safer online and off, and focus on
+          what matters most with Microsoft 365 apps
+        </p>
+        <button
+          class="bg-blue-600 px-3 py-3 font-bold mx-4 my-2 lg:ml-24 hover:bg-blue-700 text-white"
+        >
+          For one person
+        </button>
+        <button
+          class="cursor-pointer text-black hover:underline font-bold text-md"
+        >
+          For up to six people >
+        </button>
+      </div>
+      <div class="right">
+        <img class="" src="/assets/710689672_227977525_1024x576-100d5ead.webp" alt="" />
+      </div>
+    </div>
+
+    <div class="flex flex-row space-x-8 items-center justify-center my-5 hover:cursor-pointer">
+      <img class="w-6" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB8UlEQVR4nO2Zu0oDQRSGP+IF0c5L5aUWOwtFK/EhRNHCx1DyAMZWVKL4CKIWXhqfQlG0VVN5qywSm5GBI8iCZHbnzGYW9oMfFjbJ/H+YnTlzFkpKSjToAuaBKnAC3AOfwLfIXt/JPfuZOaBCBIwD20ADMCn1AtSAsU4YHwEOgVYG40m1gDownJf5VeBDwXhS78BKSOM9wFEA4yahAxlLlX7gKgfzRnQpY6rQk7N5I7oGejUC5DFtzD+yD7cXax00b0TLWc0PAW8RBPjIusQeRmDeiPbTmh9T2qS01AIm0gTY9hhsAZiW2kczRM3VfEXqlKwD/dIH7CgGaEjR2JZ5z4GSrANfSiFmXQJUlQNYppSm1KZLgNMAAbSm1LFLAN9/qh0+U+rWJYBvqezCpJgxKWU31rb4rv+uDAAPKX+7GVuAxxABCj+F7or+EJ8WfRmtBgiQdcqYhDZcAsxFXErMuBZzzxEWc09punk1j4EWA5XTWxT4QNMERklJPQLjRrRLBgYjOdS/+/RNVyIIsIQnBx00v4cC9hx61gHzF0A3SvRLwzUv8+eazd2/Td56TtOmm4AsB1qdXjUe2DR9033ZYHyNN2Wdt8t27oxK2ZGldrLf2cqyw4agIk2nTanZb+Vk1xLZ6xu5tyFVZRSvWUtKKDg/tbh4yUpzf40AAAAASUVORK5CYII=" alt="" />
+      <img class="w-4 hover:animate-bounce" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAABEUlEQVR4nO3ZoUpEURAG4M8VwSZoMSiGm4wmq03L2rcYLQajr2D1FXyCBYvNalIwaLEJmgSbIIqycC/K4lW36Jx1Ppg+cA8z/z2HlFJK7yaxgyUFWsEpXtFXkBkc4LluvqlNBejhdqjxpi4wIagKxy2ND+oICwKawh4eWxq/xrqg1nDV0vgT9jEtoHkcfnFcTrAsoA628dDS+B22FDDTh+ul/iKzCprpTZ1hVVBd3LQ0PjhGu3VUCKfKmf4Hcqb/tk7O9OBLaU5wnXrt338TC8Lm9+KD2Wdj9LLEaDzqz8mGAlQ/iBKLCtAtNcyNEqfPI8fpj3J3RJK7I5LcHdH0Sr3cHZvr9bF44BibJ6aU0n/0BnPC8z7H3U4VAAAAAElFTkSuQmCC" alt="" />
+
+      <img class="w-8" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEMAAABDCAYAAADHyrhzAAAACXBIWXMAAAsTAAALEwEAmpwYAAACzUlEQVR4nO2YS6iNURTHv6NcrzzySOrm6Pbd863/f33nHPrKY0C6ckWYSBJKBvJISkpKYWAueZWMDFFmEhNMPEOKAfKYkSSPci+hfW5u9xwnZ3/73Jn1qz39rbXX2mftb58oMgzDMAzDMAzDMAzDMAzDMAzDMAxf5nd2jlGVXlJ2ktxFcnUcxxOiYaRc7u5KgY2k7CGTzWWRLIqiwnD5SXaQ7EmBbQrsVk3WiMgUb0GlUhlHyhGFfFbiV92C9JFyqlQqTW0zyblKufGXfyDGM5Jr2/R3kLKfkA+NfhI/SDlXLsed/5SIyAyFPGiaZN2SVyQZkmgKbCGkv2UM4HjIKalWq5OUcr2Vn5C3AOY1lcRxPIqQO60LMbhe5j0hAFa4zvjGIOVgzlqMIHDF3493AIp/WRTYm6MQf2Qnch1d4EUuP+S7qsI3hgKb8u5BIecbPQWFvM4tIr4lSTLeM9F1AX53Oo56Fxy4GxDjZ938cNXXgERrS2WlV6KUs0HFgDzx8btbwm0sJIabY0OKIb3BxRDZ4ZOsUq4GFuOrl1+1GrwH4NCQrrEnVETKVq9kIZfD/Pjo4wegbRTjwKAoSZJZoSIAS3ySdcM2MMZ9H7+bXbWBG9bQ9fWdIx6HdM3dEp6dWx7YtcM+/oE9yLXce4D0k5zc0DluaOt4taZA4l7OGJ/SNJ3uXQxNFuffgxxrnixw0V8kt4rF4ugcxagNOUK++MZw75Y8/loMyGn/U4GnWVfXxKaiLMvGErjgUc2bs+N4Wt5Eh3Tvfaujq8D2EH+WZSNJnPH4eTxs+vXZQMENFAKPmgieu1esCxi1gXsDkXLSzZyGIvcp5VKalipRm6gmqxRyu/Hbg5A3pOxzr/JcQpIzASxyNwaA7nYTbOLvADBHNVmWiizw/ZrNW3gAC1ORpWlakuH8i8AwDMMwDMMwDMMwDMMwDMMwDMMwov+K34VkIu2ZD5UHAAAAAElFTkSuQmCC" alt="" />
+      <img class="w-6 hover:animate-bounce" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAuUlEQVR4nO3YsQkCQRBA0V/AetiHPRiL2MuFBiJYmaHYg4keCAZqCyfCHYiBFxjdzH+wBXxmFpYFSZIkSZL0jxlwBE7ABpgQ3B5oP849evjhKzh8+LyLazOFF6AGbj/CH8AOmBJIMZx8E193cYbjxHHV8Y7HUAFb4DnwgFkSTDUQ3hBMlSW4yrLSJcvDpBiKEx2lkml16wwfAsVQYk30bZHtE++SJbTXZAntrYArcI4eKkmSJEkSI/MC3j/dUeYtzkIAAAAASUVORK5CYII=" alt="" />
+    </div>
+
+    <div
+      class="flex flex-col md:flex-row md:space-x-10 md:my-16 md:justify-center"
+    >
+      <div class="items flex flex-col items-center">
+        <img
+          class="items-center justify-center"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAh0lEQVR4nO3YSwqFMBAF0Wwjtf+V+FnXfSPBiS1CHkSsAqeRpnMmac3MHtV734GM+o5zR54JrLeDDP5h/n3uZQ6CG4lXq0ojaCQaqdIIGolGqjSCRqKRKo0wmRGbLXx8YC4juBHcCF6tIo2gkWikSiNoJBqp0ggaiUa+YmR7wSDL7SBm1s79AD1bIMh/hUQeAAAAAElFTkSuQmCC"
+          alt=""
+        />
+        <p class="items-center text-md text-blue-600 font-semibold underline">
+          Choose your microsoft 365
+        </p>
+      </div>
+      <div class="items flex flex-col items-center">
+        <img class="items-center justify-center" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABa0lEQVR4nO2YTU6EQBCF+wyaTuY9kK3X8Sg6x9JJvIELOQvuNHEugGlDk5gMQ/8x1Ei9pBckVFd9VFEUbYxKpYoWyTuSB5JHkr2QdST5SvI+GALAp4DA+1MLwJeLMQTkMBg8W2t3RoistTsALz62WQNfTpIgvJqmwZCZbzMnn0J/DeBt7XIi2U7FFwwiAKI/FU8yiFlJVBBqRhYRtbSopbWIKOzBLg8C4AHAR+HBrnP7XhqkW+JL7Pa9KAgXqLmSezIFpMCA2IoAYaHhTgyIyXS4SoukIBAkdNCxQwoD6ZI7pCQQJtiNNlJBMN9B26sAYWyHlA5iQu9TkK1lhIkTARXE6Mv+q5gSvcrS2gSISdyDm8sIM1ZpECaOKG0myHtOZhkXy19foU5J3lZV9VTX9U1kQNmZ5BnfKSB7d5/bcAWQ/ZTvaBD3NAA8xmYkRpywO+d7tJF0QIecX93hh7+TcGSKhFhKHs+qVP9ZP5YGP9g6WvTGAAAAAElFTkSuQmCC" alt="" />
+        <p class="items-center text-md text-blue-600 font-semibold underline">
+          Explore surface devices
+        </p>
+      </div>
+      <div class="items flex flex-col items-center">
+        <img class="items-center justify-center" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEvElEQVR4nO1aWYhcRRStTOK+oNP2vDqnXk8rjIkMih+DICGKuIAQRNxAXMEPNRFE8cMfRf1ziUTwR380AaOiqFFIRI2imeiHohA1iWMSk6gdAlmUKMZxzLTcmWp4vn5b1ZvpFyUX7sf0dN1b59atu1UrdZT+p9RsNk8zxiwG8CjJtSS/AdAC8Ifllv1sjXxHvitr1JFAw8PDx2qtryX5FoA/SbZd2K55U2SILFUB9RljbgCwzXXzGbwLwJ1Kqbk9QSCWI3m5ACF5D8lVAH7xBQDgAMmXRJaZNs4VQ0NDx6kqKAzDE4wxtwEYcwAwJmuazebx6gikeeIeAHZngNgL4MGe34kwDPsBPEdyD4D9AD4gecfIyMgxaWvq9frJAJ4meTgC4G8Ay+R/Ger6tNZXSgAA8CuAHwGs1FrXS4EgWSO5JcWyO0jerpSak7F+oYRcywtzdF2VpgvA995g7KVeX8DX1wVBcJaXEqWU1nqY5PsF7tWoVxAA8JRD9Pmd5FJHFXMA3AfgkIOe5U4atNYXx/y7KL8cBMFJBYx0IoDXPOQfNsZcWhTHPOvTvont8zwFJDeUkL9Z9piLQsJnCSVyZzYW0LGxjA6SS/J0zAWwtQSIVhAEZ+YpCcPQkNxeAsiOzFMBcHUJEAeCIDhXFSSJdAB+8tVnjLk+C8jrniAOAVikHInkAkm0nmBWZ0USl1AYZUmMXhSG4XkA9nkYb7y/v//UJOtc5nkayzIsXpOEKWVNVmYGcJFPP2OMWZyk9BEPIO+m9Q8DAwMBgK8j35Xyo5EGRmt9C8lJR/1PJFnlVceT2JbWqjYaDabUTTuNMWdnnMxjjntYk3QiXzoImTDGXJiymcGsEA7gZ5LzU7D0AfjQxZhJQHY5AHmoZH7YI8VimgwUv/y/JVmy6OL1SfeiXq9rxw5xN4BzUk71mqJyuvqigkAOaq2bCYrPIPmt40WdcrO0SoDk6iIyukp72yjlLXwgrrBWq53ieL/iYMaSQjPJ+ZIrctaOJ1kgbzNb4scof5N8zxdEhL8Qg6juPS3PAdJK8stXshZprW9NaIxWzACIzqbWxd3Ezgv2Z6z7xCkhSnEXrzbFzWYKRETPCpfcIkMRpxIFwJMx4YsA/DXTQDhddtwf1SX3J60GBHBz4pAtbYEx5vxY6dGaDRCc5ol4JZ3SFk9KzukCYk/ljYQF22OZ96NZBNG2vDNa/qTkldFEEBmN1fOzeS8y3PmFjt7BwcHTE4Yhd+cNHv5VYgC4yYJYIO8cvQJCclKmOREjbo7saZ/0T1lA5HLdFRXYaV+lZO8hiLblTZ0ZsVS6kc8fVnlkk9ymjlUkttt5bLsiXmqBvBgpa3JnZ1NkjLnENjkHrZBPKwTyg53yTyVfeUNRLiQtrIxCtdYXVAii3dm8HYyscgIRcbENkgyrBsLpZ4aVSfWYy7PCx1UDAfBVEAQDXiAiYBoZbyS9APGdzADUTJA0TgA+qwDIaOmTSHn4ecZjZOPDkySfndV3RnmadunNPVxpq4R/1QuSJAng3jJD6JQx0ZJKfgFh3e1GWz5MeGxeevK1WuvrqvoJRxfJQFleZiXvAHhHIp0t7sbtXHev/extko/Ld3Oeqo+S+i/TPxost8fXcksbAAAAAElFTkSuQmCC" alt="" />
+        <p class="items-center text-md text-blue-600 font-semibold underline">
+          Buy xbox games
+        </p>
+      </div>
+      <div class="items flex flex-col items-center">
+        <img
+          class="items-center justify-center"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAh0lEQVR4nO3YSwqFMBAF0Wwjtf+V+FnXfSPBiS1CHkSsAqeRpnMmac3MHtV734GM+o5zR54JrLeDDP5h/n3uZQ6CG4lXq0ojaCQaqdIIGolGqjSCRqKRKo0wmRGbLXx8YC4juBHcCF6tIo2gkWikSiNoJBqp0ggaiUa+YmR7wSDL7SBm1s79AD1bIMh/hUQeAAAAAElFTkSuQmCC"
+          alt=""
+        />
+        <p class="items-center text-md text-blue-600 font-semibold underline">
+          Get windows 11
+        </p>
+      </div>
+    </div>
+
+    <div class="laptops flex flex-col my-6 cursor-pointer">
+        
+      <div
+        class="box items-start justify-center flex flex-col md:flex-row md:space-x-2 lg:mx-6 gap-4 ">
+        <div class="item">
+          <img
+            class="mx-auto sm:w-fit md:w-96  hover:opacity-60"
+            src="/assets/surface-lappy-727dbe61.png"
+            alt=""/>
+
+          <div class="flex flex-col my-3">
+            <h1 class="text-2xl font-semibold mx-4">Surface Laptop 5</h1>
+            <p class="mx-4 text-lg">
+              Sophisticated style and multitasking speed powered by 12th Gen
+              Intel® Core, with Windows 11.
+            </p>
+            <button class="my-4 mx-4 text-left text-blue-700">
+              Learn More >
+            </button>
+          </div>
+        </div>
+
+        <div class="items">
+          <img
+            class="mx-auto bg-[#cbd5e1] sm:w-fit md:w-96 hover:opacity-60"
+            src="/assets/miclapp-12976824.avif"
+            alt=""
+          />
+
+          <div class="flex flex-col my-3">
+            <h1 class="text-2xl font-semibold mx-4">Surface Laptop Studio</h1>
+            <p class="mx-4 text-lg">
+              Flex your creative muscle on the most powerful Surface Laptop. Now
+              available with Windows 11.
+            </p>
+            <button class="my-4 mx-4 text-left text-blue-700">
+              Learn More >
+            </button>
+          </div>
+        </div>
+
+        <div class="items">
+          <img
+            class="mx-auto bg-[#447fc7] md:w-96 sm:w-fit hover:opacity-60"
+            src="/assets/micsurface9pro-3938224c.jfif"
+            alt=""
+          />
+
+          <div class="flex flex-col my-3">
+            <h1 class="text-2xl font-semibold mx-4">Surface Pro 9</h1>
+            <p class="mx-4 text-lg">
+              The tablet flexibility you want and the laptop performance you
+              need — all in one ultra-portable device.
+            </p>
+            <button class="my-4 mx-4 text-left text-blue-700">
+              Learn More >
+            </button>
+          </div>
+        </div>
+
+        <div class="items">
+          <img
+            class="mx-auto  bg-[#cbd5e1] md:w-96 sm:w-fit hover:opacity-60"
+            src="/assets/bing-458e66bd.jpg"
+            alt=""
+          />
+
+          <div class="flex flex-col my-3">
+            <h1 class="text-2xl font-semibold mx-4">
+              Introducing the new Bing
+            </h1>
+            <p class="mx-4 text-lg">
+              Your AI-powered copilot for the web. Ask questions. Chat to refine
+              results. Get comprehensive answers and creative inspiration.
+            </p>
+            <button class="my-4 mx-4 text-left text-blue-700">
+              Join the Bing preview >
+            </button>
+            <button class="my-4 mx-4 text-left text-blue-700">
+              Learn about Image reator in Bing >
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mx-4 flex flex-col md:flex-row py-12">
+      <div class="left md:w-1/2">
+        <img class="md: w-auto md:mx-16" src="/assets/games set-a21d3df1.webp" alt="" />
+      </div>
+      <div
+        class="right md:w-1/2 md:bg-[#e7e7e7] md:pl-40 md:flex md:flex-col md:items-start md:justify-center"
+      >
+        <h1 class="text-2xl font-semibold my-2">Xbox Series X</h1>
+        <p class="my-2 md:my-4">The fastest, most powerfull Xbox ever</p>
+        <button
+          class="bg-blue-600 px-3 my-4 md:my-2 py-2 font-bold md:items-start md:justify-center hover:bg-blue-700 text-white"
+        >
+          shop now
+        </button>
+      </div>
+    </div>
+
+    <div class="mx-6">
+      <h1 class="text-4xl mx-6 mt-8">For business</h1>
+
+      <div class="laptops flex flex-col my-6 cursor-pointer">
+        
+        <div
+          class="box items-start justify-center flex flex-col md:flex-row md:space-x-2 lg:mx-6 gap-4 ">
+          <div class="item">
+            <img
+              class="mx-auto sm:w-fit md:w-96  hover:opacity-60"
+              src="/assets/surface-lappy-727dbe61.png"
+              alt=""/>
+  
+            <div class="flex flex-col my-3">
+              <h1 class="text-2xl font-semibold mx-4">Surface Laptop 5</h1>
+              <p class="mx-4 text-lg">
+                Sophisticated style and multitasking speed powered by 12th Gen
+                Intel® Core, with Windows 11.
+              </p>
+              <button class="my-4 mx-4 text-left text-blue-700">
+                Learn More >
+              </button>
+            </div>
+          </div>
+  
+          <div class="items">
+            <img
+              class="mx-auto bg-[#cbd5e1] sm:w-fit md:w-96 hover:opacity-60"
+              src="/assets/miclapp-12976824.avif"
+              alt=""
+            />
+  
+            <div class="flex flex-col my-3">
+              <h1 class="text-2xl font-semibold mx-4">Surface Laptop Studio</h1>
+              <p class="mx-4 text-lg">
+                Flex your creative muscle on the most powerful Surface Laptop. Now
+                available with Windows 11.
+              </p>
+              <button class="my-4 mx-4 text-left text-blue-700">
+                Learn More >
+              </button>
+            </div>
+          </div>
+  
+          <div class="items">
+            <img
+              class="mx-auto bg-[#447fc7] md:w-96 sm:w-fit hover:opacity-60"
+              src="/assets/micsurface9pro-3938224c.jfif"
+              alt=""
+            />
+  
+            <div class="flex flex-col my-3">
+              <h1 class="text-2xl font-semibold mx-4">Surface Pro 9</h1>
+              <p class="mx-4 text-lg">
+                The tablet flexibility you want and the laptop performance you
+                need — all in one ultra-portable device.
+              </p>
+              <button class="my-4 mx-4 text-left text-blue-700">
+                Learn More >
+              </button>
+            </div>
+          </div>
+  
+          <div class="items">
+            <img
+              class="mx-auto  bg-[#cbd5e1] md:w-96 sm:w-fit hover:opacity-60"
+              src="/assets/bing-458e66bd.jpg"
+              alt=""
+            />
+  
+            <div class="flex flex-col my-3">
+              <h1 class="text-2xl font-semibold mx-4">
+                Introducing the new Bing
+              </h1>
+              <p class="mx-4 text-lg">
+                Your AI-powered copilot for the web. Ask questions. Chat to refine
+                results. Get comprehensive answers and creative inspiration.
+              </p>
+              <button class="my-4 mx-4 text-left text-blue-700">
+                Join the Bing preview >
+              </button>
+              <button class="my-4 mx-4 text-left text-blue-700">
+                Learn about Image reator in Bing >
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-row space-x-4 items-center mx-6 md:mx-16 mb-20 ">
+      <span class="text-lg">Follow Microsft</span>
+      <a href="https://www.facebook.com/Microsoft/"><span><img class="w-6 hover:cursor-pointer" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA9klEQVR4nO3ZoYpCQRiG4fcGZGGbW7Z4L3sjdptr9CZs7j3YtAkebEYNCqLZYNCyiviLYDCOnOPxm/F/YPq8fBwmHHDv6RtoAn1gDewBA7bABlgCU2ACDIEWYj6AP+B4u3joOSGkBswfDLC7I6ECzHJEGCI6OSMMAV/AfwohjQIiDAG9VEIWBUSMELANuOjh9kBevydZ54CQXyJgAadKBCyGDzmEh6jxRco2LujlfvmDaCWcXSohs1RCBqmEdFMJaacSUk8l5KeMkOzJESvgEwEhl42CeYgYX0SNL6LGF1Hji6jxRdT4Imp8ETW+iJoshh+djie7ALDHbWdYsbRZAAAAAElFTkSuQmCC" alt="" /></span></a>
+      <a href="https://twitter.com/Microsoft?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><span><img class="w-6 hover:cursor-pointer" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACR0lEQVR4nO3YTYiNURzH8Y+XTHkJkZdkIXlZKKNoyltNGTasFSuJjaZshJQFFkqKomSwxcKKUpOFl80skCYxJjUsGS9hRuNl5uqpo26TuXPvfc5zn9LzrX+dbvec8/ud8z/nOedQUFBQUFDQOLbiCl5hIERS7kBbhXoTsB0n5cRyPERpnHiAZWX1ZmMfuvELLbV0ehgLI4jfjE9ViC+FSP57Ap0YKvv9YK0dJ66fYlYK8StqFF8aI07V0/mXUPkJ5tZpoJq0KVWIZAbasRJHcKDajidhpKyhntBILbRFGPn3+BrKjzClFgO/RzWWzMjuGgx0RDBQCvEY82ocQM/HaOxuyO3x6Ikk/jamqYOjFRodxg1sCHv0v/gWQfzPkA11MQN9VXTyFhexB81YhKmRRn9YStbgY8RcrmcXEsNEf04GPqQRvq2sPB/XczDQncbAa3SFz3ryATmNNw02cCuNgXM55n4pxLE0Bhbjc84GNkrJDvzISXw/Jot0CXmXg4FLIpKcQy6MOp9nHc2xxE8sK88JO1JXxuI7ReRe2D6T4+x9vAjXu6zED2NtTAMt4VDVqNS5KgN2NchEH2bKiHXhjpyV+CGslzHJ2X8LLocLz/dI4kfCLDeUxMx+DEYQ395o8a1hR0o78oPYmZXIpvAytgSrwhSfCUfcGGnTi9VZCE9y/FmGizXZzc5jugxJLtJ7I74s/BV+DUs1eKG24maKxZrM5qFw2c+VJmzC8fA21Fv27jkQTqwvcQdnw5pZkLfogoKCgoL/mz/VO/jhDCgFxAAAAABJRU5ErkJggg==" alt="" /></span></a>
+      
+      <a href="https://www.youtube.com/MICROSOFT"><span><img class="w-6 hover:cursor-pointer" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAABgklEQVR4nO2YvUoDQRRGD2inhaClYBH0JQzxRcTCgIXvEBBsZF8gjZUYC5sUkkdILCysrIzgXxpZbBRxURwZmAVZCNx1d8LdZA58TcjO/Q5sNrMDgUAgEAjImAfWgAawA7SAY6AH9IEbYAS8uiSAcUn+fD5y37XX9NwaLbdmw82wswpTA5pAG7jKFPKdxM1suw62Sy42JljWCLOeR2BfQWGTie0k5kxBYZNJJ4/Ao4LCJpMnafkVBWXNmCxLBOoKipox2ZQINBUUNWOyKxGICg7ZBp49CUQSgW7BIZYF4BD4KFmgKxG4LEEgZRU4AX5KEhhIBO5KFEjZAq5LEBhKBGIPApY5YA94KbB2LBF49ySQsggcAJ//WPtNIvDtWSDFbs7Oc679pU3gwoeA71toCTjyeQvFVf8RDxU/Rm8lAgPFf2T9mdhKRFXfzDU9DZ/YdrquoKgp8kJT+VdKy4OCsiaTe3LQUVDYZHI6UwdbNQWFTZGjxcof7k7F8XogEAgEpp9fHNFFy637RjwAAAAASUVORK5CYII=" alt="" /></span></a>
+      
+    </div>
+
+    <div
+      class="footer bg-[#e7e7e7] flex flex-col md:flex-row space-y-4 md:space-x-16 px-6 md:px-16 py-6">
+      <div class="category text-slate-700 flex flex-col text-sm space-y-4 py-2 ">
+        <h1 class="text-xl ">What's new</h1>
+        <span class="hover:cursor-pointer hover:underline">Microsft 365</span>
+        <span class="hover:cursor-pointer hover:underline">Games</span>
+        <span class="hover:cursor-pointer hover:underline">Surface Pro 9</span>
+        <span class="hover:cursor-pointer hover:underline"> Surface Laptop 5</span>
+        <span class="hover:cursor-pointer hover:underline"> Surface Laptop Studio</span>
+        <span class="hover:cursor-pointer hover:underline"> Surface Laptop Go 2</span>
+        <span class="hover:cursor-pointer hover:underline"> Windows 11 apps</span>
+      </div>
+
+      <div class="category text-slate-700 flex flex-col text-sm space-y-4 py-2">
+        <h1 class="text-xl">Microsoft Store</h1>
+        <span class="hover:cursor-pointer hover:underline">Account profile</span>
+        <span class="hover:cursor-pointer hover:underline"> Download Center</span>
+        <span class="hover:cursor-pointer hover:underline"> Microsoft Store Support</span>
+        <span class="hover:cursor-pointer hover:underline">Returns</span>
+        <span class="hover:cursor-pointer hover:underline">Order tracking</span>
+      </div>
+
+      <div class="category text-slate-700 flex flex-col text-sm space-y-4 py-2">
+        <h1 class="text-xl">Education</h1>
+        <span class="hover:cursor-pointer hover:underline">Microsoft in education</span>
+        <span class="hover:cursor-pointer hover:underline"> Devices for education</span>
+        <span class="hover:cursor-pointer hover:underline">Microsoft Teams for Education</span>
+        <span class="hover:cursor-pointer hover:underline">Microsoft 365 Education</span>
+        <span class="hover:cursor-pointer hover:underline">Office Education</span>
+        <span class="hover:cursor-pointer hover:underline"> Educator training and development</span>
+        <span class="hover:cursor-pointer hover:underline"> Deals for students and parents</span>
+        <span class="hover:cursor-pointer hover:underline"> Azure for students</span>
+      </div>
+      <div class="category text-slate-700 flex flex-col text-sm space-y-4 py-2">
+        <h1 class="text-xl">Business</h1>
+        <span class="hover:cursor-pointer hover:underline">Microsoft Cloud</span>
+        <span class="hover:cursor-pointer hover:underline">Microsoft Security</span>
+        <span class="hover:cursor-pointer hover:underline">Azure</span>
+        <span class="hover:cursor-pointer hover:underline">Dynamics 365</span>
+        <span class="hover:cursor-pointer hover:underline">Microsoft 365</span>
+        <span class="hover:cursor-pointer hover:underline"> Microsoft Advertising</span>
+        <span class="hover:cursor-pointer hover:underline">Microsoft Industry</span>
+        <span class="hover:cursor-pointer hover:underline">Microsoft Teams </span>
+      </div>
+      <div class="category text-slate-700 flex flex-col text-sm space-y-4 py-2">
+        <h1 class="text-xl">Developer & IT</h1>
+        <span class="hover:cursor-pointer hover:underline">Developer Center</span>
+        <span class="hover:cursor-pointer hover:underline"> Documentation</span>
+        <span class="hover:cursor-pointer hover:underline"> Microsoft Learn</span>
+        <span class="hover:cursor-pointer hover:underline"> Microsoft Tech Community</span>
+        <span class="hover:cursor-pointer hover:underline"> Azure Marketplace</span>
+        <span class="hover:cursor-pointer hover:underline"> AppSource</span>
+        <span class="hover:cursor-pointer hover:underline"> Microsoft Power Platform</span>
+        <span class="hover:cursor-pointer hover:underline"> Visual Studio</span>
+      </div>
+      <div class="category text-slate-700 flex flex-col text-sm space-y-4 py-2">
+        <h1 class="text-xl">Company</h1>
+        <span class="hover:cursor-pointer hover:underline">Careers</span>
+        <span class="hover:cursor-pointer hover:underline">About Microsoft</span>
+        <span class="hover:cursor-pointer hover:underline">Company news</span>
+        <span class="hover:cursor-pointer hover:underline"> Privacy at Microsoft</span>
+        <span class="hover:cursor-pointer hover:underline">Investors</span>
+        <span class="hover:cursor-pointer hover:underline"> Security</span>
+        <span class="hover:cursor-pointer hover:underline"> Sustainability</span>
+      </div>
+    </div>
+
+    <div class="bg-[#e7e7e7] flex py-2 pb-6 text-slate-600 ">
+        <div class="flex  items-center mx-16">
+        <img class="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAACnklEQVR4nO1Wy2oUQRSdRXRjfO0VXEQTcON77R/4ANfmH9To7iZ1zq2aIQtRshlQY77BlSYq/oIQo4KIYJYqxqBujHJ7qsMYerqqRxcKuVDQ3XXr1ulzn63WtvxP4pwbD+R1Dyx5YEWBdVvFM7mowJT3/shfv5jkKSUfe/Jn1gKWgnMn//jibre7w5NzCmxE4x8UuBvIc8bG7OzsLhHZWQUinrktIiNDXR5C2O+BJ9HYVwUoInuqdFNsiMi+xn+ukXIlV/3MzOmtOm3njua6RMlnxlQ2AE/ORfTv2yIHqnQUmM6OiR6Lt/IDDtgw2usCyQPLTQB48gfJE0kAWlIPsIahJhf3u2Kx9nLn3HgZ7e12e28S7RAucc4drjNyIyreaQ0pKQAkrw0GQC6akuV53SWW/x6YV+Ctkvc9cDmEcCiLBeBRHfrXhZL3YwNBqk4o+byJ7wvb3o/F95eDGQDWTKnT6eyu2ic5WdT++nSbDuQlBd4o0C0zSURG4/5aEoCIjA5gKPm3AThbddaqaNT5XAfgVXRBZUfLTLWnlbZVJ2IMrCSDUJ07PyyAfr//Ztu5ixHgwzoGpqLSvar9YhYYkgUPLBR7qleShUiBj4MKUU6qbY0D64ae/JQsRCbFtNMD4VsZkkO/JztJ+kuxtInDxDdrTK2EVBSa+f59kmfMVmxGx1L2CrFJJtWOt6Zu1F+2KlnuAThYzBM9Rm+2ckVERjZdQa7aX9QA6MYL1m1IKb8H544r8K7sgo1HM7HAiSAihaFqtDKXxSYzuXmO7Cjwvaz9jUeyUgy1TTLmvzI7zMeBvGCFxSqmLXsuvlljitFuZ4z2oYfSfjFqlXyQW4SM8qzpp6lYDls/N1qtpHryiy0lX1iKeeBqXSfdln9SfgHKDqkCK/rQcgAAAABJRU5ErkJggg==" alt=""> 
+        <span class="mx-2 text-sm">English(india)</span>
+    </div>
+        <div class=" flex items-center  space-x-5 text-sm text-slate-600 md:mx-48">
+            <span class="hover:cursor-pointer hover:underline">Contact Microsft</span>
+            <span class="hover:cursor-pointer hover:underline">Privacy</span>
+            <span class="hover:cursor-pointer hover:underline">Term of use</span>
+            <span class="hover:cursor-pointer hover:underline">Trademarks</span>
+            <span class="hover:cursor-pointer hover:underline">About our ads</span>
+            <span class="hover:cursor-pointer hover:underline">copyright Microsft 2023</span>
+        </div>
+    </div>
+  </body>
+</html>
